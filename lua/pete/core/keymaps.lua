@@ -4,11 +4,10 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 -- general
-keymap.set("n", "<leader>x", ":<CR>", opts)
+keymap.set("n", "<leader>x", ":w<CR>")
 
 -- insert
 keymap.set("i", "jk", "<ESC>")
-
 
 -- normal
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
@@ -50,3 +49,8 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+
+-- git fugitive
+-- dv - vertical split
+-- - stage/unstage
+-- = see in changes diff
