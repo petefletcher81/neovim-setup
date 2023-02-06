@@ -33,7 +33,15 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+	-- use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+	use({
+		"rose-pine/neovim",
+		as = "rose-pine",
+		config = function()
+			require("rose-pine").setup()
+			vim.cmd("colorscheme rose-pine")
+		end,
+	})
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
@@ -43,7 +51,7 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim")
 
 	-- file explorer
-	-- use("nvim-tree/nvim-tree.lua")
+	use("nvim-tree/nvim-tree.lua")
 
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
