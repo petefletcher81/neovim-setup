@@ -32,6 +32,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
+	use("ThePrimeagen/harpoon")
 
 	-- use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 	use({
