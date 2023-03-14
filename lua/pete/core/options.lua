@@ -2,9 +2,9 @@ local opt = vim.opt
 
 opt.scrolloff = 8
 opt.updatetime = 50
-opt.colorcolumn = "100"
+opt.colorcolumn = "80"
 
--- line numbers 
+-- line numbers
 opt.relativenumber = true
 opt.number = true
 
@@ -15,7 +15,7 @@ opt.expandtab = true
 opt.autoindent = true
 
 -- line wrapping
-opt.wrap = false
+opt.wrap = true
 
 -- search settings
 opt.ignorecase = true
@@ -33,13 +33,13 @@ opt.signcolumn = "yes"
 opt.backspace = "indent,eol,start"
 
 -- clipboard
-opt.clipboard:append('unnamedplus')
+opt.clipboard:append("unnamedplus")
 
 -- windows
 opt.splitright = true
 opt.splitbelow = true
 
-opt.iskeyword:append('-') -- considers dash as word
+opt.iskeyword:append("-") -- considers dash as word
 
 opt.swapfile = false
 opt.backup = false

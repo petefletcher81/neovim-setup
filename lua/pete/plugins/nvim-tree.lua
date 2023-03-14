@@ -35,7 +35,7 @@ nvimtree.setup({
 			resize_window = true,
 		},
 	},
-	-- 	git = {
-	-- 		ignore = false,
-	-- 	},
+	-- git = {
+	-- 	ignore = false,
+	-- },
 })
